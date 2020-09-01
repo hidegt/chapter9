@@ -1,0 +1,93 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #ff9a4b;
+  /* width: 100%;   不要 */
+  height: 50px;
+}
+/* ↓ch9演習 */
+/* .position{
+  position: absolute;
+  top: 100px;
+  right: 40px;
+}
+.fab{
+  font-size: 32px;
+} */
+main{
+  margin: 50px auto;
+  display: flex;
+  width: 960px;
+}
+.box{
+  background-color: #eeeeee;
+  width: 300px;
+  position: relative;
+  margin-right: 30px;
+  padding: 10px;
+}
+/* 右はmargin rightいらないので */
+.box:last-child{
+  margin-right: 0;
+}
+.img1{
+  background-image: url(../img/flow01.png);
+  height: 150px;
+  background-size: cover;
+  background-position:bottom;
+}
+.img2{
+  background-image: url(../img/flow02.png);
+  height: 150px;
+  background-size: cover;
+  background-position:bottom;
+}
+.img3{
+  background-image: url(../img/flow03.png);
+  height: 150px;
+  background-size: cover;
+  background-position:bottom;
+}
+.num{
+  background-color: #ff9a4b;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px;
+  /* 上のpaddingは必要？(answerに合わせる) */
+}
+.title{
+  /* margin-top: 15px;
+  margin-bottom: 5px; */
+  margin: 15px 0 5px;
+}
+
+footer{
+  background-color: #aaaaaa;
+  height: 50px;
+}
+
+/* chapter10課題 */
+@media screen and (max-width: 768px) {
+  main{
+    width: 100%;
+    display: block;
+  }
+  .box{
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .box:last-child{
+    margin: 0 auto;
+  }
+  /* .img1,.img2,.img3{
+    width: 70%;
+    パーセントの算出
+  } */
+}
